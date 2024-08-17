@@ -2,9 +2,8 @@ name: Update Profile Stats
 
 on:
   schedule:
-    # Menjalankan workflow setiap hari pada pukul 04:00 UTC
-    - cron: '0 4 * * *'
-  workflow_dispatch:
+    - cron: '0 4 * * *' # Setiap hari pukul 04:00 UTC
+  workflow_dispatch: # Memungkinkan eksekusi manual
 
 jobs:
   generate-stats:
