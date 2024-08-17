@@ -22,7 +22,6 @@ Welcome to my GitHub profile!
     </div>
   </div>
 </div>
-
 <style>
   @keyframes scroll {
     0% { transform: translateX(0); }
