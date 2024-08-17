@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests matplotlib numpy
+          pip install requests matplotlib numpy timedelta DateTime
 
       - name: Generate Contribution Calendar Heatmap
         run: python generate_heatmap.py
