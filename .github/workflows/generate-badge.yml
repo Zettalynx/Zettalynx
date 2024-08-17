@@ -1,0 +1,27 @@
+name: Generate Custom Badge
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Jalankan setiap hari
+  workflow_dispatch: # Memungkinkan eksekusi manual
+
+jobs:
+  generate-badge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v3
+
+      - name: Generate Custom Badge
+        run: |
+          echo "Generating badge..."
+          curl -o badge.svg "https://img.shields.io/badge/contributions-${{ steps.contribution.outputs.count }}-blue"
+      
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add badge.svg
+          git commit -m "Update custom badge"
+          git push
