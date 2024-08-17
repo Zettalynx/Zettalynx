@@ -4,7 +4,7 @@ on:
   schedule:
     # Menjalankan workflow setiap hari pada pukul 05:00 UTC
     - cron: '0 5 * * *'
-  workflow_dispatch:
+  workflow_dispatch: # Memungkinkan eksekusi manual kapan saja
 
 jobs:
   generate:
@@ -16,7 +16,7 @@ jobs:
       - name: Generate Snake Animation
         uses: Platane/snk@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: Zettalynx # Ganti dengan username GitHub Anda
           outputs: dist/snake.svg
 
       - name: Upload the Snake Animation
