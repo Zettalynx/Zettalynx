@@ -24,6 +24,8 @@ $(cat activity.md)
 
 [Click here to play the game!](https://Zettalynx.github.io/Zettalynx/index.html)
 
+![Custom Badge](https://github.com/Zettalynx/Zettalynx/blob/main/badge.svg)
+
 
 <!--
 **Zettalynx/Zettalynx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
