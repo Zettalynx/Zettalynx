@@ -9,6 +9,10 @@
 
 ![GitHub Stats](https://github.com/Zettalynx/Zettalynx/blob/main/stats.png)
 
+### Real-time Language Stats
+
+![Top Languages](https://github.com/Zettalynx/Zettalynx/blob/main/language_stats.md)
+
 
 <!--
 **Zettalynx/Zettalynx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
