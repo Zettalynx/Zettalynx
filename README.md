@@ -2,9 +2,7 @@
 
 Welcome to my GitHub profile!
 
-# Welcome to My Profile!
-
-## My Career Roadmap 🚀
+### My Career Roadmap 🚀
 
 ```mermaid
 gantt
@@ -21,7 +19,7 @@ gantt
     Contribute to Open Source :des6, 2024-07-01, 2024-12-31
 ```
 
-## Recent Activity
+### Recent Activity
 <!--START_SECTION:activity-->
 $(cat activity.md)
 <!--END_SECTION:activity-->
