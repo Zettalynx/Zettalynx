@@ -1,5 +1,10 @@
 ## Hi there 👋
 
+### 🐍
+
+![Snake animation](https://github.com/Zettalynx/Zettalynx/output/snake.gif)
+
+
 <!--
 **Zettalynx/Zettalynx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
