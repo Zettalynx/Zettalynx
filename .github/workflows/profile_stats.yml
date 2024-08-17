@@ -2,8 +2,8 @@ name: Update Profile Stats
 
 on:
   schedule:
-    - cron: '0 4 * * *' # Setiap hari pukul 04:00 UTC
-  workflow_dispatch: # Memungkinkan eksekusi manual
+    - cron: '0 4 * * *'
+  workflow_dispatch:
 
 jobs:
   generate-stats:
@@ -20,7 +20,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests matplotlib
+          pip install --upgrade requests matplotlib
+
+      - name: Create directory if not exists
+        run: mkdir -p dist
 
       - name: Run Python script
         run: python generate_stats.py
@@ -29,6 +32,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add stats.png
+          git add dist/stats.png
           git commit -m "Update profile stats"
           git push
