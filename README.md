@@ -1,4 +1,10 @@
-## Hi there 👋
+# Hi, I'm Zettalynx! 👋
+
+Welcome to my GitHub profile!
+
+## Recent Activity
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
 
 ### 🐍
 
