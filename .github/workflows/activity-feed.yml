@@ -1,0 +1,34 @@
+name: Update GitHub Activity Feed
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Setiap hari pada tengah malam UTC
+  workflow_dispatch: # Bisa juga dijalankan secara manual
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Generate GitHub Activity Feed
+        run: python generate_activity.py
+
+      - name: Update README with new activity
+        run: |
+          sed -i '/<!--START_SECTION:activity-->/, /<!--END_SECTION:activity-->/c\<!--START_SECTION:activity-->\n$(cat activity.md)\n<!--END_SECTION:activity-->' README.md
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m "Update README with recent GitHub activity"
+          git push
