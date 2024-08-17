@@ -3,18 +3,27 @@ import matplotlib.pyplot as plt
 
 # Ambil data dari GitHub API
 username = "Zettalynx"
-url = f"https://api.github.com/issues"
+repo_name = "Zettalynx"  # Ganti dengan nama repository kamu
+url = f"https://api.github.com/repos/{username}/{repo_name}/issues"
 response = requests.get(url)
-issues = response.json()
 
-# Simulasi data untuk issues (contoh)
-titles = [issue['title'] for issue in issues]
-counts = [1 for _ in issues]  # Simulasi counts
+# Cek apakah permintaan berhasil
+if response.status_code == 200:
+    issues = response.json()
 
-# Buat bar chart
-plt.bar(titles, counts)
-plt.xlabel('Issues')
-plt.ylabel('Count')
-plt.title('Recent Issues Opened')
-plt.xticks(rotation=90)
-plt.savefig('recent_issues.svg')
+    # Pastikan issues adalah list
+    if isinstance(issues, list):
+        titles = [issue['title'] for issue in issues]
+        statuses = [1 for _ in issues]  # Simulasi status
+
+        # Buat bar chart
+        plt.bar(titles, statuses)
+        plt.xlabel('Issues')
+        plt.ylabel('Status')
+        plt.title('Recent Issues')
+        plt.xticks(rotation=90)
+        plt.savefig('recent_issues.svg')
+    else:
+        print("Error: Unexpected data format.")
+else:
+    print(f"Error: Failed to fetch data. Status code: {response.status_code}")
