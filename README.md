@@ -83,10 +83,6 @@ gantt
 
 ![GitHub Stats](https://github.com/Zettalynx/Zettalynx/blob/main/stats.png)
 
-### Code Trivia Challenge 🎮
-
-[Click here to play the game!](https://Zettalynx.github.io/Zettalynx/index.html)
-
 ![Custom Badge](https://github.com/Zettalynx/Zettalynx/blob/main/badge.svg)
 
 
