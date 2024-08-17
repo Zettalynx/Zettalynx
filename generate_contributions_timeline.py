@@ -1,7 +1,8 @@
 import requests
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
-from datetime import datetime
+from datetime import datetime, timedelta  # Import timedelta
+import numpy as np
 
 # Ambil data dari GitHub API
 username = "Zettalynx"
