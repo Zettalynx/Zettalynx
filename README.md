@@ -4,6 +4,9 @@
 
 ![Snake animation](https://github.com/Zettalynx/Zettalynx/blob/output/github-contribution-grid-snake.gif)
 
+### My GitHub Stats 📊
+
+![GitHub Stats](https://github.com/Zettalynx/Zettalynx/blob/main/stats.png)
 
 <!--
 **Zettalynx/Zettalynx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
