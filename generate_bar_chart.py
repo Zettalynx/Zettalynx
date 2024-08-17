@@ -1,5 +1,6 @@
 import requests
 import matplotlib.pyplot as plt
+import numpy as np  # Pastikan ini ditambahkan
 
 # Ambil data dari GitHub API
 username = "Zettalynx"
