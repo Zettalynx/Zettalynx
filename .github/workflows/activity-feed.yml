@@ -26,7 +26,8 @@ jobs:
 
       - name: Update README with new activity
         run: |
-          sed -i '/<!--START_SECTION:activity-->/, /<!--END_SECTION:activity-->/c\<!--START_SECTION:activity-->\n$(cat activity.md)\n<!--END_SECTION:activity-->' README.md
+          ACTIVITY_CONTENT=$(cat activity.md)
+          sed -i '/<!--START_SECTION:activity-->/, /<!--END_SECTION:activity-->/c\<!--START_SECTION:activity-->\n'"$ACTIVITY_CONTENT"'\n<!--END_SECTION:activity-->' README.md
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add README.md
