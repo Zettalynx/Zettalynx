@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install plotly pandas
+          pip install plotly pandas kaleido
 
       - name: Run Python script
         run: python generate_plotly_chart.py
