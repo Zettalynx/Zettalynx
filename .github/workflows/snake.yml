@@ -1,40 +1,34 @@
 name: Generate Snake Animation
 
 on:
-  schedule:
-    # Menjalankan workflow setiap hari pada pukul 05:00 UTC
-    - cron: '0 5 * * *'
+  schedule: # Menjalankan setiap 12 jam
+    - cron: "0 */12 * * *"
   workflow_dispatch: # Memungkinkan eksekusi manual kapan saja
+  push:
+    branches:
+      - main # Menjalankan saat ada push ke branch main
 
 jobs:
   generate:
+    permissions:
+      contents: write # Izin untuk menulis konten (dibutuhkan untuk push)
     runs-on: ubuntu-latest
+    timeout-minutes: 5 # Waktu maksimum untuk menjalankan job adalah 5 menit
+
     steps:
       - name: Checkout repository content
         uses: actions/checkout@v3
 
-      - name: Generate Snake Animation
-        uses: Platane/snk@v3
+      - name: Generate Snake Animation SVG
+        uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: Zettalynx # Ganti dengan username GitHub Anda
-          outputs: dist/snake.svg
+          github_user_name: ${{ github.repository_owner }} # Menggunakan nama user dari repository owner
+          outputs: dist/snake.svg?palette=github-dark # Menentukan palet warna dark GitHub
 
-      - name: Upload the Snake Animation
-        uses: actions/upload-artifact@v3
+      - name: Push snake.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          name: snake-animation
-          path: dist/snake.svg
-
-      - name: Generate Snake Animation GIF
-        uses: crazy-max/ghaction-gif-screenshot@v2
-        with:
-          input: dist/snake.svg
-          output: dist/snake.gif
-
-      - name: Commit and Push the updated Snake GIF
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add dist/snake.gif
-          git commit -m "Update Snake Animation"
-          git push
+          target_branch: output # Menggunakan branch output untuk menyimpan SVG
+          build_dir: dist # Direktori tempat snake.svg disimpan
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token untuk otorisasi push
