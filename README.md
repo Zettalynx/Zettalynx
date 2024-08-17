@@ -43,9 +43,10 @@ $(cat activity.md)
 
 ![Custom Badge](https://github.com/Zettalynx/Zettalynx/blob/main/badge.svg)
 
-### My Interactive Data Visualization
+### My Data Visualization
 
-<iframe src="https://github.com/Zettalynx/Zettalynx/blob/main/interactive_chart.html" width="600" height="400"></iframe>
+![Data Visualization](https://raw.githubusercontent.com/Zettalynx/Zettalynx/main/data_visualization.png)
+
 
 
 <!--
