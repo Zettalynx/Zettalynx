@@ -1,3 +1,58 @@
+# Hi there, I'm [Zettalynx](https://github.com/Zettalynx) 👋
+
+Welcome to my GitHub profile! Here you'll find various interactive elements and visualizations of my GitHub activity and contributions.
+
+## 🗓️ Contribution Calendar Heatmap
+
+![Contribution Calendar](https://github.com/Zettalynx/Zettalynx/blob/main/heatmap.svg)
+
+## 📊 Activity Pie Chart
+
+![Activity Pie Chart](https://github.com/Zettalynx/Zettalynx/blob/main/pie_chart.svg)
+
+## 📈 Dynamic Bar Chart
+
+![Dynamic Bar Chart](https://github.com/Zettalynx/Zettalynx/blob/main/bar_chart.svg)
+
+## 🎖️ GitHub Profile SVG Badge
+
+![GitHub Profile Badge](https://github.com/Zettalynx/Zettalynx/blob/main/profile_badge.svg)
+
+## 📉 Commit History Graph
+
+![Commit History Graph](https://github.com/Zettalynx/Zettalynx/blob/main/commit_history.svg)
+
+## ⭐ Repository Stars and Forks
+
+![Repository Stars and Forks](https://github.com/Zettalynx/Zettalynx/blob/main/stars_forks.svg)
+
+## 💻 Top Languages Used
+
+![Top Languages Used](https://github.com/Zettalynx/Zettalynx/blob/main/top_languages.svg)
+
+## 🔍 Latest Pull Requests
+
+![Latest Pull Requests](https://github.com/Zettalynx/Zettalynx/blob/main/latest_prs.svg)
+
+## 🧩 Recent Issues Opened
+
+![Recent Issues Opened](https://github.com/Zettalynx/Zettalynx/blob/main/recent_issues.svg)
+
+## 🕒 GitHub Contributions Timeline
+
+![GitHub Contributions Timeline](https://github.com/Zettalynx/Zettalynx/blob/main/contributions_timeline.svg)
+
+---
+
+### 🔧 How It Works
+
+All visualizations are generated using GitHub Actions and Python scripts. The SVG files are automatically updated to reflect my latest GitHub activity and contributions.
+
+Feel free to explore the code and visualizations in this repository. If you have any questions or suggestions, let me know!
+
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Zettalynx&show_icons=true&hide_title=true&hide=contribs,prs&count_private=true&include_all_commits=true&hide_border=true&theme=dark)](https://github.com/Zettalynx)
+
+
 # Hi, I'm Zettalynx! 👋
 
 Welcome to my GitHub profile!
