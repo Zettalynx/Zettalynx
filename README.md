@@ -43,6 +43,10 @@ $(cat activity.md)
 
 ![Custom Badge](https://github.com/Zettalynx/Zettalynx/blob/main/badge.svg)
 
+### My Interactive Data Visualization
+
+<iframe src="https://github.com/Zettalynx/Zettalynx/blob/main/interactive_chart.html" width="600" height="400"></iframe>
+
 
 <!--
 **Zettalynx/Zettalynx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
