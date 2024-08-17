@@ -2,7 +2,7 @@
 
 ### 🐍
 
-![Snake animation](https://github.com/Zettalynx/Zettalynx/output/snake.gif)
+![Snake animation](https://github.com/Zettalynx/Zettalynx/blob/output/github-contribution-grid-snake.gif)
 
 
 <!--
