@@ -85,6 +85,9 @@ gantt
 
 ![Custom Badge](https://github.com/Zettalynx/Zettalynx/blob/main/badge.svg)
 
+<!-- START_STATS -->
+<!-- Content from github_stats.md will be inserted here -->
+<!-- END_STATS -->
 
 <!--
 **Zettalynx/Zettalynx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
