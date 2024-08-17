@@ -74,11 +74,6 @@ gantt
     Contribute to Open Source :des6, 2024-07-01, 2024-12-31
 ```
 
-### Recent Activity
-<!--START_SECTION:activity-->
-$(cat activity.md)
-<!--END_SECTION:activity-->
-
 ### 🐍
 
 ![Snake animation](https://github.com/Zettalynx/Zettalynx/blob/output/snake.svg)
@@ -88,22 +83,11 @@ $(cat activity.md)
 
 ![GitHub Stats](https://github.com/Zettalynx/Zettalynx/blob/main/stats.png)
 
-### Real-time Language Stats
-
-![Top Languages](https://github.com/Zettalynx/Zettalynx/blob/main/language_stats.md)
-
 ### Code Trivia Challenge 🎮
 
 [Click here to play the game!](https://Zettalynx.github.io/Zettalynx/index.html)
 
 ![Custom Badge](https://github.com/Zettalynx/Zettalynx/blob/main/badge.svg)
-
-### My Data Visualization
-
-![Data Visualization](https://raw.githubusercontent.com/Zettalynx/Zettalynx/main/data_visualization.png)
-
-![Stars](https://img.shields.io/github/stars/Zettalynx/Zettalynx?style=social)
-
 
 
 <!--
