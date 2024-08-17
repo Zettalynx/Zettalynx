@@ -2,8 +2,6 @@
 
 ### 🐍
 
-[![Generate Snake Animation](https://github.com/Zettalynx/Zettalynx/actions/workflows/snake.yml/badge.svg)](https://github.com/Zettalynx/Zettalynx/actions/workflows/snake.yml)
-<br/>
 ![Snake animation](https://github.com/Zettalynx/Zettalynx/blob/output/snake.svg)
 
 
