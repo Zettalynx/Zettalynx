@@ -10,18 +10,20 @@ response = requests.get(url)
 # Cek apakah permintaan berhasil
 if response.status_code == 200:
     issues = response.json()
-
-    # Pastikan issues adalah list
     if isinstance(issues, list):
         titles = [issue['title'] for issue in issues]
-        statuses = [1 for _ in issues]  # Simulasi status
+        statuses = [1 for _ in issues]
 
-        # Buat bar chart
-        plt.bar(titles, statuses)
-        plt.xlabel('Issues')
-        plt.ylabel('Status')
-        plt.title('Recent Issues')
-        plt.xticks(rotation=90)
+        # Buat bar chart dengan tema gelap
+        plt.style.use('dark_background')
+        plt.figure(figsize=(12, 8))
+        plt.bar(titles, statuses, color='orange')
+        plt.xlabel('Issues', fontsize=14)
+        plt.ylabel('Status', fontsize=14)
+        plt.title('Recent Issues', fontsize=16)
+        plt.xticks(rotation=90, fontsize=12)
+        plt.yticks(fontsize=12)
+        plt.tight_layout()
         plt.savefig('recent_issues.svg')
     else:
         print("Error: Unexpected data format.")
