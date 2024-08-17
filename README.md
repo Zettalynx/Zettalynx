@@ -4,6 +4,7 @@ Welcome to my GitHub profile!
 
 ## Recent Activity
 <!--START_SECTION:activity-->
+$(cat activity.md)
 <!--END_SECTION:activity-->
 
 ### 🐍
