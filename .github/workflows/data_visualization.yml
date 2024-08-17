@@ -28,6 +28,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add interactive_chart.html
+          git add data_visualization.png
           git commit -m "Update data visualization"
           git push
