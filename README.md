@@ -20,6 +20,10 @@ $(cat activity.md)
 
 ![Top Languages](https://github.com/Zettalynx/Zettalynx/blob/main/language_stats.md)
 
+### Code Trivia Challenge 🎮
+
+[Click here to play the game!](https://Zettalynx.github.io/Zettalynx/index.html)
+
 
 <!--
 **Zettalynx/Zettalynx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
