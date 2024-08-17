@@ -47,6 +47,8 @@ $(cat activity.md)
 
 ![Data Visualization](https://raw.githubusercontent.com/Zettalynx/Zettalynx/main/data_visualization.png)
 
+![Stars](https://img.shields.io/github/stars/Zettalynx/Zettalynx?style=social)
+
 
 
 <!--
