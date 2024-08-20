@@ -9,33 +9,31 @@ url = "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart"
 params = {
     'vs_currency': 'usd',
     'days': '365',  # Periode waktu 1 tahun
-    'interval': 'daily'  # Mengubah interval menjadi bulanan
+    'interval': 'daily'
 }
 response = requests.get(url, params=params)
 data = response.json()
 
-# Mengambil harga dan tanggal
-timestamps = [item[0] / 1000 for item in data['prices']]
+# Menyiapkan data untuk grafik
+dates = [datetime.fromtimestamp(item[0] / 1000) for item in data['prices']]
 prices = [item[1] for item in data['prices']]
 
-# Menggunakan harga penutupan untuk semua harga
+# Membuat data dummy untuk Open, High, Low, dan Close
 df = pd.DataFrame({
-    'Date': pd.to_datetime(timestamps, unit='s'),
+    'Date': dates,
     'Open': prices,
-    'High': prices,
-    'Low': prices,
+    'High': [price + (price * 0.05) for price in prices],  # Harga tertinggi sedikit lebih tinggi dari harga penutupan
+    'Low': [price - (price * 0.05) for price in prices],   # Harga terendah sedikit lebih rendah dari harga penutupan
     'Close': prices
 })
 
 df.set_index('Date', inplace=True)
-df.index.name = 'Date'
 
-# Menyiapkan grafik candlestick
+# Membuat grafik candlestick
 plt.figure(figsize=(12, 6))
 mpf.plot(df, type='candle', style='charles', title='Bitcoin Price Over the Last 1 Year',
-         ylabel='Price (USD)', datetime_format='%Y-%m',
-         figratio=(12,6), figscale=1.2, title_kwargs={'color': 'white'},
-         ylabel_kwargs={'color': 'white'}, volume=False)
+         ylabel='Price (USD)', datetime_format='%Y-%m', 
+         figratio=(12,6), figscale=1.2)
 
 # Mengatur tema dark background
 plt.gca().set_facecolor('black')
