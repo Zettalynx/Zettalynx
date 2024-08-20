@@ -42,17 +42,9 @@ Welcome to my GitHub profile! Here you'll find various interactive elements and 
 
 ![GitHub Contributions Timeline](https://github.com/Zettalynx/Zettalynx/blob/main/contributions_timeline.svg)
 
----
-
-### 🔧 How It Works
-
-All visualizations are generated using GitHub Actions and Python scripts. The SVG files are automatically updated to reflect my latest GitHub activity and contributions.
-
-Feel free to explore the code and visualizations in this repository. If you have any questions or suggestions, let me know!
-
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Zettalynx&show_icons=true&hide_title=true&hide=contribs,prs&count_private=true&include_all_commits=true&hide_border=true&theme=dark)](https://github.com/Zettalynx)
 
-### My Career Roadmap 🚀
+## My Career Roadmap 🚀
 
 ```mermaid
 gantt
@@ -69,12 +61,12 @@ gantt
     Contribute to Open Source :des6, 2024-07-01, 2024-12-31
 ```
 
-### 🐍
+## 🐍 Snake
 
 ![Snake animation](https://github.com/Zettalynx/Zettalynx/blob/output/snake.svg)
 
 
-### My GitHub Stats 📊
+## My GitHub Stats 📊
 
 ![GitHub Stats](https://github.com/Zettalynx/Zettalynx/blob/main/stats.png)
 
@@ -91,8 +83,6 @@ gantt
 <!-- END_STATS -->
 
 ## BTC
-
-![Bitcoin Candlestick Chart](bitcoin_candlestick_chart.png)
 
 ![Bitcoin Chart](bitcoin_chart.png)
 
