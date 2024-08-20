@@ -9,7 +9,7 @@ url = "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart"
 params = {
     'vs_currency': 'usd',
     'days': '365',  # Periode waktu 1 tahun
-    'interval': 'monthly'  # Mengubah interval menjadi bulanan
+    'interval': 'daily'  # Mengubah interval menjadi bulanan
 }
 response = requests.get(url, params=params)
 data = response.json()
