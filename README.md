@@ -92,6 +92,8 @@ gantt
 
 ## BTC
 
+![Bitcoin Candlestick Chart](bitcoin_candlestick_chart.png)
+
 ![Bitcoin Chart](bitcoin_chart.png)
 
 <!--
