@@ -19,8 +19,8 @@ data = response.json()
 dates = [datetime.fromtimestamp(item[0] / 1000) for item in data['prices']]
 prices = [item[1] for item in data['prices']]
 
-# Untuk grafik candlestick, kita butuh harga pembukaan, penutupan, tertinggi, dan terendah
-# Menggunakan harga penutupan sebagai harga pembukaan dan penutupan, dan rentang harga sebagai tertinggi dan terendah
+# Mengatur harga pembukaan, penutupan, tertinggi, dan terendah
+# Karena data tidak menyediakan harga pembukaan, penutupan, tertinggi, dan terendah, kita akan menggunakan harga penutupan untuk semuanya
 df = pd.DataFrame({
     'Date': dates,
     'Open': prices,
@@ -30,14 +30,22 @@ df = pd.DataFrame({
 })
 
 df.set_index('Date', inplace=True)
-df.index.name = 'Date'
 
 # Mengatur format tanggal pada x-axis
 plt.figure(figsize=(12, 6))
-mpf.plot(df, type='candle', style='charles', title='Bitcoin Price Over the Last 1 Year', 
-         ylabel='Price (USD)', datetime_format='%Y-%m', 
-         figratio=(12,6), figscale=1.2, style='dark_background', 
-         title_kwargs={'color': 'white'}, ylabel_kwargs={'color': 'white'})
+mpf.plot(df, type='candle', style='charles', title='Bitcoin Price Over the Last 1 Year',
+         ylabel='Price (USD)', datetime_format='%Y-%m',
+         figratio=(12,6), figscale=1.2)
+
+# Mengatur tema dark background
+plt.gca().set_facecolor('black')
+plt.gcf().patch.set_facecolor('black')
+plt.title('Bitcoin Price Over the Last 1 Year', color='white')
+plt.xlabel('Date', color='white')
+plt.ylabel('Price (USD)', color='white')
+plt.xticks(color='white')
+plt.yticks(color='white')
+plt.grid(True, color='white', linestyle='--', linewidth=0.5)
 
 # Simpan gambar grafik dengan background transparan
 plt.savefig('bitcoin_candlestick_chart.png', bbox_inches='tight', transparent=True)
