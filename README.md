@@ -81,7 +81,7 @@ gantt
 ![Custom Badge](https://github.com/Zettalynx/Zettalynx/blob/main/badge.svg)
 
 <!-- START_STATS -->
-## GitHub Repository Statistics
+# GitHub Repository Statistics
 | Repository | Stars | Forks | Commits | Latest PR | Recent Issue | Language | Contributions |
 |------------|-------|-------|---------|-----------|--------------|----------|---------------|
 | crypto | 1 | 0 | 32 | PR Title | Issue Title | JavaScript | 58 |
