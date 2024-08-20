@@ -52,11 +52,6 @@ Feel free to explore the code and visualizations in this repository. If you have
 
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Zettalynx&show_icons=true&hide_title=true&hide=contribs,prs&count_private=true&include_all_commits=true&hide_border=true&theme=dark)](https://github.com/Zettalynx)
 
-
-# Hi, I'm Zettalynx! 👋
-
-Welcome to my GitHub profile!
-
 ### My Career Roadmap 🚀
 
 ```mermaid
@@ -86,7 +81,7 @@ gantt
 ![Custom Badge](https://github.com/Zettalynx/Zettalynx/blob/main/badge.svg)
 
 <!-- START_STATS -->
-# GitHub Repository Statistics
+## GitHub Repository Statistics
 | Repository | Stars | Forks | Commits | Latest PR | Recent Issue | Language | Contributions |
 |------------|-------|-------|---------|-----------|--------------|----------|---------------|
 | crypto | 1 | 0 | 32 | PR Title | Issue Title | JavaScript | 58 |
@@ -94,6 +89,10 @@ gantt
 | Zettalynx | 1 | 0 | 1441 | PR Title | Issue Title | HTML | 22 |
 
 <!-- END_STATS -->
+
+## BTC
+
+![Bitcoin Chart](bitcoin_chart.png)
 
 <!--
 **Zettalynx/Zettalynx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
