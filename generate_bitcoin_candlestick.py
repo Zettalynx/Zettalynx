@@ -1,6 +1,5 @@
 import requests
 import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
 import mplfinance as mpf
 from datetime import datetime
 import pandas as pd
@@ -10,19 +9,18 @@ url = "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart"
 params = {
     'vs_currency': 'usd',
     'days': '365',  # Periode waktu 1 tahun
-    'interval': 'daily'
+    'interval': 'monthly'  # Mengubah interval menjadi bulanan
 }
 response = requests.get(url, params=params)
 data = response.json()
 
-# Menyiapkan data untuk grafik
-dates = [datetime.fromtimestamp(item[0] / 1000) for item in data['prices']]
+# Mengambil harga dan tanggal
+timestamps = [item[0] / 1000 for item in data['prices']]
 prices = [item[1] for item in data['prices']]
 
-# Mengatur harga pembukaan, penutupan, tertinggi, dan terendah
-# Karena data tidak menyediakan harga pembukaan, penutupan, tertinggi, dan terendah, kita akan menggunakan harga penutupan untuk semuanya
+# Menggunakan harga penutupan untuk semua harga
 df = pd.DataFrame({
-    'Date': dates,
+    'Date': pd.to_datetime(timestamps, unit='s'),
     'Open': prices,
     'High': prices,
     'Low': prices,
@@ -30,12 +28,14 @@ df = pd.DataFrame({
 })
 
 df.set_index('Date', inplace=True)
+df.index.name = 'Date'
 
-# Mengatur format tanggal pada x-axis
+# Menyiapkan grafik candlestick
 plt.figure(figsize=(12, 6))
 mpf.plot(df, type='candle', style='charles', title='Bitcoin Price Over the Last 1 Year',
          ylabel='Price (USD)', datetime_format='%Y-%m',
-         figratio=(12,6), figscale=1.2)
+         figratio=(12,6), figscale=1.2, title_kwargs={'color': 'white'},
+         ylabel_kwargs={'color': 'white'}, volume=False)
 
 # Mengatur tema dark background
 plt.gca().set_facecolor('black')
