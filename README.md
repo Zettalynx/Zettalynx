@@ -2,88 +2,25 @@
 
 Welcome to my GitHub profile! Here you'll find various interactive elements and visualizations of my GitHub activity and contributions.
 
-## 🗓️ Contribution Calendar Heatmap
+### GitHub Followers vs. Repositories
 
-![Contribution Calendar](https://github.com/Zettalynx/Zettalynx/blob/main/heatmap.svg)
+![Followers vs Repositories](github_stats_1.png)
 
-## 📊 Activity Pie Chart
+### Pull Requests vs. Issues
 
-![Activity Pie Chart](https://github.com/Zettalynx/Zettalynx/blob/main/pie_chart.svg)
+![Pull Requests vs Issues](github_stats_2.png)
 
-## 📈 Dynamic Bar Chart
+### Commits vs. Code Frequency
 
-![Dynamic Bar Chart](https://github.com/Zettalynx/Zettalynx/blob/main/bar_chart.svg)
+![Commits vs Code Frequency](github_stats_3.png)
 
-## 🎖️ GitHub Profile SVG Badge
+### Contributors vs. Forks
 
-![GitHub Profile Badge](https://github.com/Zettalynx/Zettalynx/blob/main/profile_badge.svg)
+![Contributors vs Forks](github_stats_4.png)
 
-## 📉 Commit History Graph
+### Stars vs. Watchers
 
-![Commit History Graph](https://github.com/Zettalynx/Zettalynx/blob/main/commit_history.svg)
-
-## ⭐ Repository Stars and Forks
-
-![Repository Stars and Forks](https://github.com/Zettalynx/Zettalynx/blob/main/stars_forks.svg)
-
-## 💻 Top Languages Used
-
-![Top Languages Used](https://github.com/Zettalynx/Zettalynx/blob/main/top_languages.svg)
-
-## 🔍 Latest Pull Requests
-
-![Latest Pull Requests](https://github.com/Zettalynx/Zettalynx/blob/main/latest_prs.svg)
-
-## 🧩 Recent Issues Opened
-
-![Recent Issues Opened](https://github.com/Zettalynx/Zettalynx/blob/main/recent_issues.svg)
-
-## 🕒 GitHub Contributions Timeline
-
-![GitHub Contributions Timeline](https://github.com/Zettalynx/Zettalynx/blob/main/contributions_timeline.svg)
-
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Zettalynx&show_icons=true&hide_title=true&hide=contribs,prs&count_private=true&include_all_commits=true&hide_border=true&theme=dark)](https://github.com/Zettalynx)
-
-## My Career Roadmap 🚀
-
-```mermaid
-gantt
-    title My Career Timeline
-    dateFormat  YYYY-MM-DD
-    section Education
-    Bachelor's Degree       :done, des1, 2015-09-01, 2019-05-31
-    Master's Degree         :done, des2, 2019-09-01, 2021-05-31
-    section Professional
-    Software Engineer       :done, des3, 2021-06-01, 2023-05-31
-    Senior Engineer         :active, des4, 2023-06-01, 2024-12-31
-    section Future Goals
-    Learn Data Science      :des5, 2024-01-01, 2024-06-30
-    Contribute to Open Source :des6, 2024-07-01, 2024-12-31
-```
-
-## 🐍 Snake
-
-![Snake animation](https://github.com/Zettalynx/Zettalynx/blob/output/snake.svg)
-
-
-## My GitHub Stats 📊
-
-![GitHub Stats](https://github.com/Zettalynx/Zettalynx/blob/main/stats.png)
-
-![Custom Badge](https://github.com/Zettalynx/Zettalynx/blob/main/badge.svg)
-
-<!-- START_STATS -->
-# GitHub Repository Statistics
-| Repository | Stars | Forks | Commits | Latest PR | Recent Issue | Language | Contributions |
-|------------|-------|-------|---------|-----------|--------------|----------|---------------|
-| nextanimejs | 1 | 0 | 11876 | PR Title | Issue Title | None | 32 |
-| Zettalynx | 1 | 0 | 1533 | PR Title | Issue Title | HTML | 58 |
-
-<!-- END_STATS -->
-
-## BTC
-
-![Bitcoin Chart](bitcoin_chart.png)
+![Stars vs Watchers](github_stats_5.png)
 
 <!--
 **Zettalynx/Zettalynx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
