@@ -29,7 +29,7 @@ jobs:
         run: python pullrequest-issue.py
 
       - name: Generate Commits vs Code Frequency Chart
-        run: commits-code.py
+        run: python commits-code.py
 
       - name: Generate Contributors vs Forks Chart
         run: python contribute-fork.py
