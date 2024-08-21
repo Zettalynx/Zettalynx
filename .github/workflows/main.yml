@@ -40,7 +40,11 @@ jobs:
       - name: Commit and push charts
         uses: EndBug/add-and-commit@v9
         with:
-          add: 'github_stats_1.png, github_stats_2.png, github_stats_3.png, github_stats_4.png, github_stats_5.png'
+          add: 'github_stats_1.png'
+          add: 'github_stats_2.png'
+          add: 'github_stats_3.png'
+          add: 'github_stats_4.png'
+          add: 'github_stats_5.png'
           message: 'Update GitHub stats charts'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
