@@ -1,0 +1,54 @@
+name: Hahaha
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Setiap hari jam 00:00 UTC
+  workflow_dispatch: # Memungkinkan menjalankan workflow secara manual
+
+jobs:
+  generate-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install matplotlib requests
+
+      - name: Generate Followers vs Repos Chart
+        run: python followers-repositories.py
+
+      - name: Generate Pull Requests vs Issues Chart
+        run: python pullrequest-issue.py
+
+      - name: Generate Commits vs Code Frequency Chart
+        run: python commits-code.py
+
+      - name: Generate Contributors vs Forks Chart
+        run: python contribute-fork.py
+
+      - name: Generate Stars vs Watchers Chart
+        run: python star-watch.py
+
+      - name: Commit and push charts
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'github_stats_1.png, github_stats_2.png, github_stats_3.png, github_stats_4.png, github_stats_5.png'
+          message: 'Update GitHub stats charts'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_branch: gh-pages
+          folder: ./
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
