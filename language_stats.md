@@ -2,5 +2,5 @@
 
 | Language | Percentage |
 |----------|------------|
-| HTML | 99.62% |
-| Python | 0.38% |
+| HTML | 99.54% |
+| Python | 0.46% |
