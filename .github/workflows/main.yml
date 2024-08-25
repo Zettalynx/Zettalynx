@@ -1,15 +1,16 @@
-name: Generate GitHub Stats Charts
+name: Generate bitcoin Price
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Setiap hari jam 00:00 UTC
-  workflow_dispatch: # Memungkinkan menjalankan workflow secara manual
+    - cron: '21 21 * * *'
+  workflow_dispatch:
 
 jobs:
-  generate-stats:
+  generate-image:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Set up Python
@@ -19,40 +20,15 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install matplotlib requests datetime
+          pip install matplotlib requests pandas
 
-      - name: Generate Followers vs Repos Chart
-        run: python followers-repositories.py
+      - name: Run generator
+        run: python bitcoin.py
 
-      - name: Generate Pull Requests vs Issues Chart
-        run: python pullrequest-issue.py
-
-      - name: Generate Commits vs Code Frequency Chart
-        run: python commits-code.py
-
-      - name: Generate Contributors vs Forks Chart
-        run: python contribute-fork.py
-
-      - name: Generate Stars vs Watchers Chart
-        run: python star-watch.py
-
-      - name: Commit and push charts
+      - name: Commit and push stats image
         uses: EndBug/add-and-commit@v9
         with:
-          add: 'github_stats_1.png'
-          add: 'github_stats_2.png'
-          add: 'github_stats_3.png'
-          add: 'github_stats_4.png'
-          add: 'github_stats_5.png'
-          message: 'Update GitHub stats charts'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          deploy_branch: gh-pages
-          folder: ./
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          author_name: 'GitHub Actions'
+          author_email: 'actions@github.com'
+          message: 'Update GitHub stats image'
+          add: 'bitcoin.png'

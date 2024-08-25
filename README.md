@@ -1,26 +1,17 @@
 # Hi there, I'm [Zettalynx](https://github.com/Zettalynx) 👋
 
-Welcome to my GitHub profile! Here you'll find various interactive elements and visualizations of my GitHub activity and contributions.
+Welcome to my GitHub profile! Here you'll find various interactive elements and visualizations of Crypto price.
 
-### GitHub Followers vs. Repositories
+### Bitcoin Price (Last 1 Year)
 
-![Followers vs Repositories](github_stats_1.png)
+![Bitcoin](bitcoin.png)
 
-### Pull Requests vs. Issues
+### Coins
 
-![Pull Requests vs Issues](github_stats_2.png)
+<!--START_SECTION:coins-->
 
-### Commits vs. Code Frequency
+<!--END_SECTION:coins-->
 
-![Commits vs Code Frequency](github_stats_3.png)
-
-### Contributors vs. Forks
-
-![Contributors vs Forks](github_stats_4.png)
-
-### Stars vs. Watchers
-
-![Stars vs Watchers](github_stats_5.png)
 
 <!--
 **Zettalynx/Zettalynx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
