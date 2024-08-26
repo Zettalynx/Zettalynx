@@ -2,7 +2,7 @@ name: Generate bitcoin Price
 
 on:
   schedule:
-    - cron: '21 21 * * *'
+    - cron: '21 20 * * *'
   workflow_dispatch:
 
 jobs:
