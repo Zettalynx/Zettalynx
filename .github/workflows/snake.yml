@@ -4,9 +4,9 @@ on:
   schedule: # Menjalankan setiap 12 jam
     - cron: "0 */12 * * *"
   workflow_dispatch: # Memungkinkan eksekusi manual kapan saja
-  push:
-    branches:
-      - main # Menjalankan saat ada push ke branch main
+  # push:
+  #   branches:
+  #     - main # Menjalankan saat ada push ke branch main
 
 jobs:
   generate:
