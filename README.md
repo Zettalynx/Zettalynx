@@ -22,72 +22,72 @@ Welcome to my GitHub profile! Here you'll find various interactive elements and 
   <tr>
     <td style="border: 1px solid white; padding: 10px;">1</td>
     <td style="border: 1px solid white; padding: 10px;"><img src="https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400" alt="Coin Image" style="width: 50px; height: auto; vertical-align: middle;"> <span style="vertical-align: middle;">Bitcoin (BTC)</span></td>
-    <td style="border: 1px solid white; padding: 10px;">$76,384.00</td>
-    <td style="border: 1px solid white; padding: 10px;">$1,529,675,618,622.00</td>
-    <td style="border: 1px solid white; padding: 10px;">$33,061,850,294.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$75,894.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$1,520,213,005,603.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$42,840,774,987.00</td>
   </tr>
   <tr>
     <td style="border: 1px solid white; padding: 10px;">2</td>
     <td style="border: 1px solid white; padding: 10px;"><img src="https://coin-images.coingecko.com/coins/images/279/large/ethereum.png?1696501628" alt="Coin Image" style="width: 50px; height: auto; vertical-align: middle;"> <span style="vertical-align: middle;">Ethereum (ETH)</span></td>
-    <td style="border: 1px solid white; padding: 10px;">$2,292.02</td>
-    <td style="border: 1px solid white; padding: 10px;">$276,702,081,518.00</td>
-    <td style="border: 1px solid white; padding: 10px;">$13,038,603,564.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$2,251.68</td>
+    <td style="border: 1px solid white; padding: 10px;">$271,866,664,137.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$20,046,070,640.00</td>
   </tr>
   <tr>
     <td style="border: 1px solid white; padding: 10px;">3</td>
     <td style="border: 1px solid white; padding: 10px;"><img src="https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661" alt="Coin Image" style="width: 50px; height: auto; vertical-align: middle;"> <span style="vertical-align: middle;">Tether (USDT)</span></td>
     <td style="border: 1px solid white; padding: 10px;">$1.00</td>
-    <td style="border: 1px solid white; padding: 10px;">$189,707,264,915.00</td>
-    <td style="border: 1px solid white; padding: 10px;">$55,137,931,386.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$189,613,871,998.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$74,020,109,846.00</td>
   </tr>
   <tr>
     <td style="border: 1px solid white; padding: 10px;">4</td>
     <td style="border: 1px solid white; padding: 10px;"><img src="https://coin-images.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1696501442" alt="Coin Image" style="width: 50px; height: auto; vertical-align: middle;"> <span style="vertical-align: middle;">XRP (XRP)</span></td>
-    <td style="border: 1px solid white; padding: 10px;">$1.38</td>
-    <td style="border: 1px solid white; padding: 10px;">$85,246,863,849.00</td>
-    <td style="border: 1px solid white; padding: 10px;">$1,725,534,788.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$1.37</td>
+    <td style="border: 1px solid white; padding: 10px;">$84,392,941,540.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$2,220,487,191.00</td>
   </tr>
   <tr>
     <td style="border: 1px solid white; padding: 10px;">5</td>
     <td style="border: 1px solid white; padding: 10px;"><img src="https://coin-images.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970" alt="Coin Image" style="width: 50px; height: auto; vertical-align: middle;"> <span style="vertical-align: middle;">BNB (BNB)</span></td>
-    <td style="border: 1px solid white; padding: 10px;">$623.94</td>
-    <td style="border: 1px solid white; padding: 10px;">$84,102,701,888.00</td>
-    <td style="border: 1px solid white; padding: 10px;">$751,691,032.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$616.73</td>
+    <td style="border: 1px solid white; padding: 10px;">$83,163,658,684.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$1,055,818,998.00</td>
   </tr>
   <tr>
     <td style="border: 1px solid white; padding: 10px;">6</td>
     <td style="border: 1px solid white; padding: 10px;"><img src="https://coin-images.coingecko.com/coins/images/6319/large/USDC.png?1769615602" alt="Coin Image" style="width: 50px; height: auto; vertical-align: middle;"> <span style="vertical-align: middle;">USDC (USDC)</span></td>
     <td style="border: 1px solid white; padding: 10px;">$1.00</td>
-    <td style="border: 1px solid white; padding: 10px;">$77,481,647,265.00</td>
-    <td style="border: 1px solid white; padding: 10px;">$13,051,972,619.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$77,270,571,167.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$15,197,969,020.00</td>
   </tr>
   <tr>
     <td style="border: 1px solid white; padding: 10px;">7</td>
     <td style="border: 1px solid white; padding: 10px;"><img src="https://coin-images.coingecko.com/coins/images/4128/large/solana.png?1718769756" alt="Coin Image" style="width: 50px; height: auto; vertical-align: middle;"> <span style="vertical-align: middle;">Solana (SOL)</span></td>
-    <td style="border: 1px solid white; padding: 10px;">$83.81</td>
-    <td style="border: 1px solid white; padding: 10px;">$48,250,288,036.00</td>
-    <td style="border: 1px solid white; padding: 10px;">$2,445,615,288.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$82.84</td>
+    <td style="border: 1px solid white; padding: 10px;">$47,734,387,177.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$3,811,062,348.00</td>
   </tr>
   <tr>
     <td style="border: 1px solid white; padding: 10px;">8</td>
     <td style="border: 1px solid white; padding: 10px;"><img src="https://coin-images.coingecko.com/coins/images/1094/large/photo_2026-04-13_09-59-16.png?1776048311" alt="Coin Image" style="width: 50px; height: auto; vertical-align: middle;"> <span style="vertical-align: middle;">TRON (TRX)</span></td>
     <td style="border: 1px solid white; padding: 10px;">$0.32</td>
-    <td style="border: 1px solid white; padding: 10px;">$30,601,966,901.00</td>
-    <td style="border: 1px solid white; padding: 10px;">$399,215,205.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$30,662,150,133.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$468,853,309.00</td>
   </tr>
   <tr>
     <td style="border: 1px solid white; padding: 10px;">9</td>
     <td style="border: 1px solid white; padding: 10px;"><img src="https://coin-images.coingecko.com/coins/images/68480/large/figure.png?1755863954" alt="Coin Image" style="width: 50px; height: auto; vertical-align: middle;"> <span style="vertical-align: middle;">Figure Heloc (FIGR_HELOC)</span></td>
-    <td style="border: 1px solid white; padding: 10px;">$1.04</td>
-    <td style="border: 1px solid white; padding: 10px;">$17,875,526,624.00</td>
-    <td style="border: 1px solid white; padding: 10px;">$85,179,368.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$1.03</td>
+    <td style="border: 1px solid white; padding: 10px;">$17,804,513,706.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$70,331,754.00</td>
   </tr>
   <tr>
     <td style="border: 1px solid white; padding: 10px;">10</td>
     <td style="border: 1px solid white; padding: 10px;"><img src="https://coin-images.coingecko.com/coins/images/5/large/dogecoin.png?1696501409" alt="Coin Image" style="width: 50px; height: auto; vertical-align: middle;"> <span style="vertical-align: middle;">Dogecoin (DOGE)</span></td>
     <td style="border: 1px solid white; padding: 10px;">$0.10</td>
-    <td style="border: 1px solid white; padding: 10px;">$15,363,694,008.00</td>
-    <td style="border: 1px solid white; padding: 10px;">$1,659,930,419.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$15,877,302,569.00</td>
+    <td style="border: 1px solid white; padding: 10px;">$4,258,740,475.00</td>
   </tr>
 </table>
 </div>
